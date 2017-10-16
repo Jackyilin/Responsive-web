@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>我的</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            border: 0;
+        }
+        #header, #nav, #footer{
+            width: 960px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background: #ccc;
+            color: #fff;
+            margin: 30px auto;
+        }
+        #banner{
+            width: 960px;
+            margin: 0 auto;
+        }
+        #banner img{
+            /*display: block;*/
+            /*float: left;*/
+        }
+        #content{
+            width: 960px;
+            margin: 0 auto;
+        }
+        #left, #right{
+            height: 280px;
+            float: left;
+            display: table;
+        }
+        #left{
+            width: 600px;
+            background: #ffff00;
+            margin-right: 30px;
+        }
+        #right{
+            background: #00ff00;
+            width: 330px;
+        }
+        #left p, #right p{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #footer{
+            clear: both;
+        }
+        @media (max-width: 959px){
+            #header, #nav, #footer{
+                width: 100%;
+            }
+            #content{
+                width: 100%;
+            }
+            #left{
+                width: 67%;
+                margin-right: 3%;
+            }
+            #right{
+                width: 30%;
+            }
+            #banner{
+                width: 100%;
+            }
+            #banner img{
+                width: 100%;
+            }
+            @media (max-width: 583px){
+                #left, #right{
+                    width: 100%;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h3>页头</h3>
+    </div>
+    <div id="nav">
+        <h3>导航</h3>
+    </div>
+    <div id="banner">
+        <img src="img/01_s_2x.jpg">
+    </div>
+    <div id="content">
+        <div id="left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat. Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</p>
+        </div>
+        <div id="right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sem erat, egestas quis luctus ut, rhoncus vitae risus. Integer venenatis libero sit amet sapien dictum, quis bibendum mi volutpat. Cras pretium quam quis magna facilisis, eget feugiat nisi lacinia.</p>
+        </div>
+    </div>
+    <div id="footer">
+        <h3>页脚</h3>
+    </div>
+</body>
+</html>
